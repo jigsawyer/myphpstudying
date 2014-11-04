@@ -10,3 +10,5 @@ if(isset($_COOKIE['lastVisit'])) {
 }
 setcookie('visitCounter', $visitCounter, 0x7FFFFFFF);
 setcookie('lastVisit', time(), 0x7FFFFFFF);
+$registry = Registry::instance();
+$registry->set('counter', 'world');
